@@ -1,0 +1,86 @@
+
+
+<html>
+  <head>
+<title>REGISTRATION</title>
+</head>
+<center>
+<body style="background-color: #cd9abe ;">
+</body>
+<p style="color:yellow"><center>REGISTRATION FORM</center></p>
+<p style="color:yellow"><center>SOCIAL MEDIA ACCOUNT</center></p>
+<hr>
+</hr>
+<button>FIRST NAME</button>
+<input type"text">
+<button>LAST NAME</button>
+<input type"text">
+<br>
+</br>
+<input type="radio" name="gender"
+value="male"> male
+<input type="radio" name="gender"
+value="female">female
+<br>
+</br>
+<button>AGE</button>
+<input type="number">
+<button>DATE OF BIRTH</button>
+<input type="date">
+<br>
+</br>
+<button>ADDRESS</button>
+<input type="text">
+<button>PHONE</button>
+<input type="text">
+<br>
+</br>
+<button>EMAIL</button>
+<input type="email" id="username">
+<br>
+</br>
+<select name="SOCIAL MEDIA" id="SOCIAL MEDIA">
+  <option value="SOCIAL MEDIA">SOCIAL MEDIA</option>
+  <option value="Instagram">Instagram</option>
+  <option value="Facebook">Facebook</option>
+  <option value="Tiktok">Tiktok</option>
+  <option value="Youtube">Youtube</option>
+  <option value="X">X</option>
+</select>
+<select name="SOCIAL MEDIA" id="SOCIAL MEDIA">
+  <option value="MEDIA">MEDIA</option>
+  <option value="BLOG">BLOG</option>
+  <option value="VLOG">VLOG</option>
+  <option value="MEMES">MEMES</option>
+  <option value="IMAGES">IMAGES</option>
+</select>
+<button>CHANNEL NAME</button>
+<input type="text">
+<br>
+</br>
+<button>Create Password</button>
+<input type="password" id="password">
+<br>
+</br>
+<button>Confirm Password</button>
+<input type="password">
+<button onclick="AMS()">Submit</button>
+<script>
+function AMS()
+{
+let username=document.getElementById("username");
+let password=document.getElementById("password");
+localStorage.setItem("username",username.value);
+localStorage.setItem("password",password.value);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password")); 
+window.location.href="login.html";                                   
+}
+</script>
+</center>
+<hr>
+</hr>
+<hr>
+</hr>
+</body>
+</html>
